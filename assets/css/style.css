@@ -1,0 +1,33 @@
+/* Hero style */
+.hero {
+  height: 800px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/hero.png);
+}
+
+.profile-img {
+  width: 250px;
+  transition: 0.5s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Ukuran Small */
+@media (min-width: 576px) {
+  .profile-img {
+    width: 250px;
+  }
+}
+
+/* Ukuran Large */
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+}
