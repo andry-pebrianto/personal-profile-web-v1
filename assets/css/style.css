@@ -1,6 +1,7 @@
 /* Hero style */
 .hero {
-  height: 800px;
+  height: 650px;
+  padding-top: 40px;
   object-fit: cover;
   background-size: cover;
   background-position: bottom;
@@ -25,8 +26,15 @@
   }
 }
 
-/* Ukuran Large */
+/* Ukuran Medium */
 @media (min-width: 768px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+/* Ukuran Large */
+@media (min-width: 992px) {
   .hero {
     height: 100vh;
   }
