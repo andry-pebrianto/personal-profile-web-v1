@@ -17,16 +17,13 @@
     />
     <meta
       property="og:image"
-      content="https://avatars.githubusercontent.com/u/72940944?s=400&u=d9b3a93b4c88b5607564463337affdeb7ceb630d&v=4"
+      content="./assets/img/og:image.webp"
     />
     <meta property="og:url" content="andry-pebrianto.netlify.app" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link
-      href="./assets/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -75,7 +72,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Project</a>
@@ -90,7 +87,7 @@
       <!-- End Of Navbar -->
 
       <!-- Hero -->
-      <div class="hero mb-5">
+      <div id="hero" class="hero mb-5">
         <div
           class="
             container-lg
@@ -100,12 +97,10 @@
             align-items-center
           "
         >
-          <div class="row align-items-center w-100">
-            <div
-              class="col-12 col-md-4 order-md-1 text-center mb-4 mb-md-0 h-25"
-            >
+          <div class="row align-items-center px-sm-3">
+            <div class="col-12 col-md-4 order-md-1 text-center mb-4 mb-md-0">
               <img
-                class="profile-img rounded-circle img-fluid img-thumbnail"
+                class="profile-img rounded-circle img-thumbnail"
                 src="./assets/img/profile.webp"
                 alt="Foto Andry Pebrianto"
               />
@@ -114,7 +109,7 @@
               <h1
                 class="display-4 text-center text-lg-start text-light fw-bold"
               >
-                Andry Pebrianto
+                ANDRY PEBRIANTO
               </h1>
               <p class="fs-4 text-center text-lg-start text-light fw-bold mb-4">
                 Full Stack Web Developer
@@ -168,7 +163,33 @@
     <!-- Main -->
     <main>
       <!-- About -->
-      <section></section>
+      <section id="about" class="mb-5">
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-4 d-none d-md-block">
+              <img
+                class="img-fluid text-center"
+                src="./assets/img/about.webp"
+                alt="About Image"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="col text-center text-md-start">
+              <h2 class="mb-3 fw-bold">About Me</h2>
+              <p style="line-height: 1.7; word-spacing: 3px;">
+                Saya adalah seorang
+                <strong>Full Stack Web Developer</strong> yang berfokus pada
+                <strong>Web Development</strong>. Saya telah berpengalaman
+                membuat beberapa project dengan menggunakan teknologi MERN
+                <strong>
+                  (MongoDB/MySQL, ExpressJS, ReactJS/NextJS, NodeJS).
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End Of About -->
     </main>
     <!-- End Of Main -->
@@ -176,11 +197,15 @@
     <br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
 
     <!-- JavaScript -->
     <script src="./assets/js/navbar.js"></script>
-    <script
-      src="./assets/bootstrap/js/bootstrap.bundle.min.js"
-    ></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

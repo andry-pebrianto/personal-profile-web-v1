@@ -37,10 +37,10 @@ document.querySelector(".navbar-toggler").addEventListener("click", () => {
 
 function changeNavbarDark() {
   document.getElementById("navbar").classList.remove("bg-transparent");
-  document.getElementById("navbar").classList.add("bg-dark");
+  document.getElementById("navbar").classList.add("bg-darkblue");
 }
 
 function changeNavbarTransparent() {
-  document.getElementById("navbar").classList.remove("bg-dark");
+  document.getElementById("navbar").classList.remove("bg-darkblue");
   document.getElementById("navbar").classList.add("bg-transparent");
 }
