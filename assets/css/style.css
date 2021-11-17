@@ -33,10 +33,18 @@ body {
   transform: scale(1.05);
 }
 
+.about-img {
+  width: 265px;
+}
+
 /* Ukuran Medium */
 @media (min-width: 768px) {
   .hero {
     height: 600px;
+  }
+
+  .about-img {
+    width: 100%;
   }
 }
 
