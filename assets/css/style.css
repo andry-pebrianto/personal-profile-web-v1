@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-padding-top: 50px;
+}
+
 body {
   font-family: "poppinsregular", sans-serif;
 }

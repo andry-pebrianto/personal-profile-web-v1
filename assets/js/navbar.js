@@ -8,8 +8,6 @@ function scrollFunction() {
     .querySelector(".navbar-toggler")
     .classList.contains("collapsed");
 
-  console.log(navbarTogglerStatus);
-
   if (navbarTogglerStatus) {
     if (document.documentElement.scrollTop > 100) {
       changeNavbarDark();
