@@ -77,3 +77,7 @@ body {
 .bg-light2 {
   background-color: #F3F4F6;
 }
+
+.active {
+  border: 1px solid black !important;
+}
