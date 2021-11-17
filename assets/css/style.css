@@ -4,6 +4,7 @@
     url(../font/poppins-regular-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -39,6 +40,7 @@ body {
 
 .about-img {
   width: 265px;
+  height: auto;
 }
 
 /* Ukuran Medium */
