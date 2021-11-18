@@ -84,6 +84,7 @@ formContact.addEventListener("submit", (e) => {
         nameInput.value = "";
         emailInput.value = "";
         messageInput.value = "";
+        captchaInput.value = "";
       }
 
       // Mengilangkan spinner dan disabled pada button submit
@@ -101,5 +102,5 @@ formContact.addEventListener("submit", (e) => {
 // Menampilkan pertanyaan di DOM
 function createQuestion() {
   question = [Math.floor(Math.random() * 51), Math.floor(Math.random() * 51)];
-  captchaQuestion.innerText = `${question[0]} + ${question[1]} = `;
+  captchaQuestion.innerText = `${question[0]} + ${question[1]} = ?`;
 }
