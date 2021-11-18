@@ -42,6 +42,18 @@ body {
   transform: scale(1.05);
 }
 
+.card-img {
+  background-color: #191A19;
+}
+
+.card-img img {
+  transition: .5s;
+}
+
+.card-img img:hover {
+  opacity: .5;
+}
+
 .about-img {
   width: 265px;
 }
