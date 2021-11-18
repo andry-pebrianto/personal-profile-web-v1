@@ -1,3 +1,4 @@
+// Fixer For Scrollspy Refresh Problem
 function hotfixScrollSpy() {
   var dataSpyList = [].slice.call(
     document.querySelectorAll('[data-bs-spy="scroll"]')
@@ -16,9 +17,6 @@ function getCurrentScroll() {
 }
 
 window.onload = function () {
-  new bootstrap.ScrollSpy(document.body, {
-    target: "#navbar",
-  });
   hotfixScrollSpy();
-  window.scrollBy(0, 1);
+  window.scrollBy(0, 0);
 };

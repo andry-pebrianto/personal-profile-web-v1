@@ -2,7 +2,7 @@ window.onscroll = () => {
   scrollFunction();
 };
 
-// Jika halaman discroll
+// Scroll Handler
 function scrollFunction() {
   let navbarTogglerStatus = document
     .querySelector(".navbar-toggler")
@@ -17,7 +17,7 @@ function scrollFunction() {
   }
 }
 
-// Jika tombol hamburger ditekan
+// Click Handler
 document.querySelector(".navbar-toggler").addEventListener("click", () => {
   let navbarTogglerStatus = document
     .querySelector(".navbar-toggler")
