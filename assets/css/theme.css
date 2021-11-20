@@ -1,0 +1,26 @@
+.dark-theme {
+  background-color: #343446;
+}
+
+.pure-light {
+  color: #171717;
+}
+
+.pure-light-dark {
+  color: #f7f7f7;
+}
+
+.semi-light {
+  background-color: #e5e5e5;
+  color: #171717;
+}
+
+.semi-light-dark {
+  background-color: #2d2d3b;
+  color: #f7f7f7;
+}
+
+.card-dark,
+.contact-form-dark {
+  background-color: #222831;
+}

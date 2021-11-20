@@ -1,0 +1,8 @@
+body,
+.navbar,
+.profile-img,
+section,
+.card,
+.card-img img {
+  transition: 0.5s;
+}

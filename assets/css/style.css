@@ -13,14 +13,8 @@ html {
 
 body {
   font-family: "poppinsregular", sans-serif;
-  transition: .5s;
 }
 
-.navbar {
-  font-weight: bold;
-}
-
-/* Hero style */
 .hero {
   height: 650px;
   padding-top: 40px;
@@ -36,7 +30,6 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  transition: 0.5s;
 }
 
 .profile-img:hover {
@@ -44,79 +37,13 @@ body {
 }
 
 .card-img {
-  background-color: #191A19;
-}
-
-.card-img img {
-  transition: .5s;
+  background-color: #191a19;
 }
 
 .card-img img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .about-img {
   width: 265px;
-}
-
-/* Ukuran Medium */
-@media (min-width: 768px) {
-  .hero {
-    height: 600px;
-  }
-
-  .about-img {
-    width: 100%;
-  }
-
-  .active {
-    border: 2px solid;
-  }
-}
-
-/* Ukuran Large */
-@media (min-width: 992px) {
-  .hero {
-    height: 100vh;
-  }
-
-  .profile-img {
-    width: 300px;
-    height: 300px;
-    transition: 0.5s;
-  }
-}
-
-.bg-darkblue {
-  background-color: #04387c;
-}
-
-.dark-theme {
-  background-color: #1B1B32;
-}
-
-section, .card {
-  transition: .5s;
-}
-
-.pure-light {
-  color: #171717;
-}
-
-.pure-light-dark {
-  color: #F7F7F7;
-}
-
-.semi-light {
-  background-color: #e9e9e9;
-  color: #171717;
-}
-
-.semi-light-dark {
-  background-color: #3B3B4F;
-  color: #F7F7F7;
-}
-
-.card-dark {
-  background-color: #1B1B32;
 }

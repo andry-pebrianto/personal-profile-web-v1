@@ -22,6 +22,8 @@ if (localStorage.getItem("theme") === "dark") {
   document.querySelectorAll(".card").forEach((element) => {
     element.classList.toggle("card-dark");
   });
+  // Mengubah contact form menjadi dark
+  document.getElementById("formContact").classList.toggle("contact-form-dark");
 }
 
 // Menanamkan event
@@ -50,6 +52,10 @@ function setDarkMode() {
     document.querySelectorAll(".card").forEach((element) => {
       element.classList.toggle("card-dark");
     });
+    // Mengubah contact form menjadi light
+    document
+      .getElementById("formContact")
+      .classList.toggle("contact-form-dark");
   } else {
     localStorage.setItem("theme", "dark");
     darkModeCheckbox.nextElementSibling.innerText = "Dark Theme";
@@ -68,5 +74,9 @@ function setDarkMode() {
     document.querySelectorAll(".card").forEach((element) => {
       element.classList.toggle("card-dark");
     });
+    // Mengubah contact form menjadi dark
+    document
+      .getElementById("formContact")
+      .classList.toggle("contact-form-dark");
   }
 }
