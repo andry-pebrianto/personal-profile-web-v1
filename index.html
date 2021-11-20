@@ -59,14 +59,14 @@
             class="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#primaryNavbar"
+            aria-controls="primaryNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="primaryNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link text-light" href="#about">About</a>
@@ -76,6 +76,35 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="settingsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-cog text-light"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="settingsDropdown"
+                >
+                  <li>
+                    <div class="dropdown-item">
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="darkModeCheckbox"
+                        />
+                        <label class="form-check-label" for="darkModeCheckbox">Light Mode</label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -213,7 +242,7 @@
     <!-- Main -->
     <main>
       <!-- About -->
-      <section id="about" class="mb-5">
+      <section id="about" class="mb-5 pure pure-light">
         <div class="container-lg py-5">
           <!-- Di bawah md -->
           <h2 class="fw-bold text-center d-md-none mb-3">About Me</h2>
@@ -250,7 +279,7 @@
       <!-- End Of About -->
 
       <!-- Projects -->
-      <section id="projects" class="mb-5 bg-light2">
+      <section id="projects" class="mb-5 semi semi-light">
         <div class="container-lg py-5">
           <h2 class="fw-bold text-center mb-3 mt-2">My Projects</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
@@ -270,8 +299,8 @@
                     kriptografi Caesar Cipher.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">Javascript</span>
-                    <span class="badge bg-dark">Bootstrap 5</span>
+                    <span class="badge bg-danger">Javascript</span>
+                    <span class="badge bg-danger">Bootstrap 5</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -324,8 +353,8 @@
                     dari Youtube.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">ExpressJS</span>
-                    <span class="badge bg-dark">Bootstrap 5</span>
+                    <span class="badge bg-danger">ExpressJS</span>
+                    <span class="badge bg-danger">Bootstrap 5</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -376,9 +405,9 @@
                     menambah pertemanan, dan banyak lagi.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">CodeIgniter 4</span>
-                    <span class="badge bg-dark">MySQL</span>
-                    <span class="badge bg-dark">Bootstrap 4</span>
+                    <span class="badge bg-danger">CodeIgniter 4</span>
+                    <span class="badge bg-danger">MySQL</span>
+                    <span class="badge bg-danger">Bootstrap 4</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -421,8 +450,8 @@
                     Web Profile sederhana mengenai Kota Trenggalek.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">HTML 5</span>
-                    <span class="badge bg-dark">CSS 3</span>
+                    <span class="badge bg-danger">HTML 5</span>
+                    <span class="badge bg-danger">CSS 3</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -472,8 +501,8 @@
                     Game sederhana yang dibuat menggunakan Javascript.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">Javascript</span>
-                    <span class="badge bg-dark">Firebase</span>
+                    <span class="badge bg-danger">Javascript</span>
+                    <span class="badge bg-danger">Firebase</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -523,8 +552,8 @@
                     Website sederhana untuk melakukan pencarian Anime.
                   </p>
                   <div class="mb-0">
-                    <span class="badge bg-dark">Web Components</span>
-                    <span class="badge bg-dark">Webpack 5</span>
+                    <span class="badge bg-danger">Web Components</span>
+                    <span class="badge bg-danger">Webpack 5</span>
                   </div>
                 </div>
                 <div class="card-footer">
@@ -565,7 +594,7 @@
       <!-- End Of Projects -->
 
       <!-- Contact -->
-      <section id="contact" class="mb-5">
+      <section id="contact" class="mb-5 pure pure-light">
         <div class="container-lg py-5">
           <h2 class="fw-bold text-center mb-3">Contact Me</h2>
           <div class="row justify-content-center">
@@ -583,7 +612,7 @@
                         required
                         maxlength="100"
                       />
-                      <label for="name">Name</label>
+                      <label class="text-dark" for="name">Name</label>
                     </div>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
@@ -596,7 +625,7 @@
                         required
                         maxlength="100"
                       />
-                      <label for="email">Email</label>
+                      <label class="text-dark" for="email">Email</label>
                     </div>
                   </div>
                   <div class="col-12 mb-3">
@@ -609,7 +638,7 @@
                         required
                         maxlength="1000"
                       ></textarea>
-                      <label for="message">Message</label>
+                      <label class="text-dark" for="message">Message</label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4">
@@ -620,13 +649,15 @@
                         id="captchaInput"
                         placeholder="name@example.com"
                       />
-                      <label for="captchaInput" id="captchaQuestion"
+                      <label class="text-dark" for="captchaInput" id="captchaQuestion"
                         >24 + 32 = ?</label
                       >
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary" id="formButton">Submit</button>
+                <button type="submit" class="btn btn-primary" id="formButton">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
@@ -664,5 +695,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
     <script src="./assets/js/captcha.js"></script>
+    <script src="./assets/js/darkMode.js"></script>
   </body>
 </html>
