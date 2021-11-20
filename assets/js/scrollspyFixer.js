@@ -18,5 +18,5 @@ function getCurrentScroll() {
 
 window.onload = function () {
   hotfixScrollSpy();
-  window.scrollBy(0, 0);
+  window.scrollBy(0, 1);
 };

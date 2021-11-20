@@ -16,7 +16,7 @@
 /* Ukuran Large */
 @media (min-width: 992px) {
   .hero {
-    height: 100vh;
+    height: 100.5vh;
   }
 
   .profile-img {
