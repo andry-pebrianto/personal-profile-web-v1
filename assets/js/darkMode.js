@@ -46,10 +46,10 @@ function darkTheme() {
   // Mengubah about image menjadi dark
   document
     .getElementById("aboutImage1")
-    .setAttribute("src", "./assets/img/about-dark.webp");
+    .setAttribute("src", "./assets/img/about2.webp");
   document
     .getElementById("aboutImage2")
-    .setAttribute("src", "./assets/img/about2-dark.webp");
+    .setAttribute("src", "./assets/img/about-dark.webp");
 
   // Mengubah card menjadi dark
   document.querySelectorAll(".card").forEach((element) => {

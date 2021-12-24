@@ -1,756 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Web Profile milik Full Stack Web Developer bernama Andry Pebrianto"
-    />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap 5" />
-    <meta name="author" content="Andry Pebrianto" />
-    <meta property="og:title" content="Andry Pebrianto Profile Page" />
-    <meta
-      property="og:description"
-      content="Web Profile milik Full Stack Web Developer bernama Andry Pebrianto"
-    />
-    <meta
-      property="og:image"
-      content="https://andrypebrianto.netlify.app/assets/img/og:image.jpg"
-    />
-    <meta property="og:url" content="https://andrypebrianto.netlify.app" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/theme.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="stylesheet" href="./assets/css/transition.css" />
-    <link rel="stylesheet" href="./assets/css/utilities.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web Profile milik Full Stack Web Developer bernama Andry Pebrianto" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap 5" />
+  <meta name="author" content="Andry Pebrianto" />
+  <meta property="og:title" content="Andry Pebrianto Profile Page" />
+  <meta property="og:description" content="Web Profile milik Full Stack Web Developer bernama Andry Pebrianto" />
+  <meta property="og:image" content="https://andrypebrianto.netlify.app/assets/img/og:image.jpg" />
+  <meta property="og:url" content="https://andrypebrianto.netlify.app" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/theme.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="./assets/css/transition.css" />
+  <link rel="stylesheet" href="./assets/css/utilities.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <title>Andry Pebrianto</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" />
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
-    <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <nav
-        id="navbar"
-        class="
+  <title>Andry Pebrianto</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav id="navbar" class="
           navbar navbar-expand-md navbar-dark
           bg-transparent
           shadow
           fixed-top
           fw-bold
-        "
-      >
-        <div class="container">
-          <a class="navbar-brand" href="#">Andry Pebrianto</a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#primaryNavbar"
-            aria-controls="primaryNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="primaryNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#projects">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="settingsDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  aria-label="Settings Dropdown"
-                >
-                  <i class="fas fa-cog text-light"></i>
-                </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="settingsDropdown"
-                >
-                  <li>
-                    <div class="dropdown-item">
-                      <div class="form-check form-switch">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="darkModeCheckbox"
-                        />
-                        <label class="form-check-label" for="darkModeCheckbox"
-                          >Light Mode</label
-                        >
-                      </div>
+        ">
+      <div class="container">
+        <a class="navbar-brand" href="#">Andry Pebrianto</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar"
+          aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="settingsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-label="Settings Dropdown">
+                <i class="fas fa-cog text-light"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
+                <li>
+                  <div class="dropdown-item">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="darkModeCheckbox" />
+                      <label class="form-check-label" for="darkModeCheckbox">Light Mode</label>
                     </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- End Of Navbar -->
+      </div>
+    </nav>
+    <!-- End Of Navbar -->
 
-      <!-- Hero -->
-      <div class="hero mb-5">
-        <div
-          class="
+    <!-- Hero -->
+    <div class="hero mb-5">
+      <div class="
             container-lg
             h-100
             d-flex
             justify-content-center
             align-items-center
-          "
-        >
-          <div class="row align-items-center px-sm-3">
-            <div class="col-12 col-md-4 order-md-1 text-center mb-4 mb-md-0">
-              <img
-                class="profile-img rounded-circle img-thumbnail"
-                src="./assets/img/profile.webp"
-                alt="Foto Andry Pebrianto"
-              />
+          ">
+        <div class="row align-items-center px-sm-3">
+          <div class="col-12 col-md-4 order-md-1 text-center mb-4 mb-md-0">
+            <img class="profile-img rounded-circle img-thumbnail" src="./assets/img/profile.webp"
+              alt="Foto Andry Pebrianto" />
+          </div>
+          <div class="col">
+            <h1 class="display-4 text-center text-lg-start text-light fw-bold">
+              ANDRY PEBRIANTO
+            </h1>
+            <p id="typewriter" class="fs-4 text-center text-lg-start text-light fw-bold mb-4">
+              |
+            </p>
+            <div class="row text-sm-center text-lg-start mb-2">
+              <div class="col-12 col-lg-6">
+                <p class="mb-2">
+                  <a href="tel:+6285784964378" class="text-light text-decoration-none" target="_blank"><i
+                      class="fas fa-phone-alt me-2" style="transform: scaleX(-1)"></i>
+                    +6285784964378</a>
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <p class="mb-2">
+                  <a href="mailto:andrypeb227@gmail.com" class="text-light text-decoration-none" target="_blank"><i
+                      class="fas fa-envelope me-2"></i>
+                    andrypeb227@gmail.com</a>
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <p class="mb-2">
+                  <a href="https://www.google.com/maps/@-8.1190092,111.7536683,3a,75y,66.13h,75.09t/data=!3m7!1e1!3m5!1sPlWkPGpAc782UuRvePu-iA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DPlWkPGpAc782UuRvePu-iA%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D182.75537%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"
+                    class="text-light text-decoration-none" target="_blank"><i class="fas fa-map-marker-alt me-2"></i>
+                    Trenggalek,
+                    Jawa Timur, Indonesia</a>
+                </p>
+              </div>
             </div>
-            <div class="col">
-              <h1
-                class="display-4 text-center text-lg-start text-light fw-bold"
-              >
-                ANDRY PEBRIANTO
-              </h1>
-              <p
-                id="typewriter"
-                class="fs-4 text-center text-lg-start text-light fw-bold mb-4"
-              >
-                |
-              </p>
-              <div class="row text-sm-center text-lg-start mb-2">
-                <div class="col-12 col-lg-6">
-                  <p class="mb-2">
-                    <a
-                      href="tel:+6285784964378"
-                      class="text-light text-decoration-none"
-                      target="_blank"
-                      ><i
-                        class="fas fa-phone-alt me-2"
-                        style="transform: scaleX(-1)"
-                      ></i>
-                      +6285784964378</a
-                    >
-                  </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <p class="mb-2">
-                    <a
-                      href="mailto:andrypeb227@gmail.com"
-                      class="text-light text-decoration-none"
-                      target="_blank"
-                      ><i class="fas fa-envelope me-2"></i>
-                      andrypeb227@gmail.com</a
-                    >
-                  </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <p class="mb-2">
-                    <a
-                      href="https://www.google.com/maps/@-8.1190092,111.7536683,3a,75y,66.13h,75.09t/data=!3m7!1e1!3m5!1sPlWkPGpAc782UuRvePu-iA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DPlWkPGpAc782UuRvePu-iA%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D182.75537%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"
-                      class="text-light text-decoration-none"
-                      target="_blank"
-                      ><i class="fas fa-map-marker-alt me-2"></i> Trenggalek,
-                      Jawa Timur, Indonesia</a
-                    >
-                  </p>
+            <div class="fs-4 text-sm-center text-lg-start">
+              <a class="text-light me-3" href="https://wa.me/6285784964378" target="_blank" rel="noreferrer"
+                aria-label="Whatsapp Account"><i class="fab fa-whatsapp"></i></a>
+              <a class="text-light me-3" href="https://www.linkedin.com/in/andry-pebrianto/" target="_blank"
+                rel="noreferrer" aria-label="Linkedin Account"><i class="fab fa-linkedin"></i></a>
+              <a class="text-light me-3" href="https://github.com/andry-pebrianto" target="_blank" rel="noreferrer"
+                aria-label="Github Account"><i class="fab fa-github"></i></a>
+              <a class="text-light me-3" href="https://t.me/aswassaw" target="_blank" rel="noreferrer"
+                aria-label="Telegram Account"><i class="fab fa-telegram-plane"></i></a>
+              <a class="text-light me-3" href="https://www.facebook.com/andry.pebrianto/" target="_blank"
+                rel="noreferrer" aria-label="Facebook Account"><i class="fab fa-facebook"></i></a>
+              <a class="text-light" href="https://www.instagram.com/andry_pebrianto/" target="_blank" rel="noreferrer"
+                aria-label="Instagram Account"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Of Hero -->
+  </header>
+  <!-- End Of Header -->
+
+  <!-- Main -->
+  <main>
+    <!-- About -->
+    <section id="about" class="mb-5 pure pure-light">
+      <div class="container-lg py-5">
+        <!-- Di bawah md -->
+        <h2 class="fw-bold text-center d-md-none mb-3">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+            <img class="about-img d-none d-sm-inline d-md-none" id="aboutImage2" src="./assets/img/about2.webp"
+              alt="About Image" />
+            <img class="about-img" id="aboutImage1" src="./assets/img/about.webp" alt="About Image" />
+          </div>
+          <div class="col text-center text-md-start">
+            <!-- Di atas md -->
+            <h2 class="fw-bold d-none d-md-block">About Me</h2>
+            <p class="mb-0" style="line-height: 1.7; word-spacing: 3px">
+              Saya adalah seorang
+              <strong>Full Stack Web Developer</strong>
+              yang berfokus pada
+              <strong>Web Development</strong>. Saya telah berpengalaman
+              membuat beberapa project dengan menggunakan teknologi MERN
+              <strong>
+                (MongoDB/MySQL, ExpressJS, ReactJS/NextJS, NodeJS).
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of About -->
+
+    <!-- Skills -->
+    <section id="skills" class="mb-5 semi semi-light">
+      <div class="container-lg py-5">
+        <h2 class="fw-bold text-center mb-3 mt-2">My Skill</h2>
+        <div class="autoplay">
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/html.svg" width="100px" height="100px" alt="HTML Logo">
+            <p class="fs-5 mb-0 mt-3">HTML</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/css.svg" width="100px" height="100px" alt="CSS Logo">
+            <p class="fs-5 mb-0 mt-3">CSS</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/javascript.svg" width="100px" height="100px" alt="JavaScript Logo">
+            <p class="fs-5 mb-0 mt-3">JavaScript
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/bootstrap.svg" width="100px" height="100px" alt="Bootstrap Logo">
+            <p class="fs-5 mb-0 mt-3">Bootstrap</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/express.svg" width="100px" height="100px" alt="ExpressJS Logo">
+            <p class="fs-5 mb-0 mt-3">ExpressJS</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/react.svg" width="100px" height="100px" alt="ReactJS Logo">
+            <p class="fs-5 mb-0 mt-3">ReactJS</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/next.svg" width="100px" height="100px" alt="NextJS Logo">
+            <p class="fs-5 mb-0 mt-3">NextJS</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/codeigniter.svg" width="100px" height="100px" alt="CodeIgniter 4 Logo">
+            <p class="fs-5 mb-0 mt-3">CodeIgniter 4</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/firebase.svg" width="100px" height="100px" alt="Firebase Logo">
+            <p class="fs-5 mb-0 mt-3">Firebase</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/github.svg" width="100px" height="100px" alt="Github Logo">
+            <p class="fs-5 mb-0 mt-3">Github</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/mysql.svg" width="100px" height="100px" alt="MySQL Logo">
+            <p class="fs-5 mb-0 mt-3">MySQL</p>
+          </div>
+          <div class="d-flex flex-column align-items-center bg-light m-3 py-3 skill-item">
+            <img src="./assets/svg/mongodb.svg" width="100px" height="100px" alt="MongoDB Logo">
+            <p class="fs-5 mb-0 mt-3">Mongoose</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Skills -->
+
+    <!-- Projects -->
+    <section id="projects" class="mb-5 semi semi-light">
+      <div class="container-lg py-5">
+        <h2 class="fw-bold text-center mb-3 mt-2">My Projects</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project1.webp" alt="Caesar Cipher Web App Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">Caesar Cipher Encoder</p>
+                <p class="card-text mb-2">
+                  Aplikasi Web untuk melakukan enkripsi dan/atau dekripsi
+                  kriptografi Caesar Cipher.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">Javascript</span>
+                  <span class="badge bg-darkblue">Bootstrap 5</span>
                 </div>
               </div>
-              <div class="fs-4 text-sm-center text-lg-start">
-                <a
-                  class="text-light me-3"
-                  href="https://wa.me/6285784964378"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Whatsapp Account"
-                  ><i class="fab fa-whatsapp"></i
-                ></a>
-                <a
-                  class="text-light me-3"
-                  href="https://www.linkedin.com/in/andry-pebrianto/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Linkedin Account"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a
-                  class="text-light me-3"
-                  href="https://github.com/andry-pebrianto"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Github Account"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="text-light me-3"
-                  href="https://t.me/aswassaw"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Telegram Account"
-                  ><i class="fab fa-telegram-plane"></i
-                ></a>
-                <a
-                  class="text-light me-3"
-                  href="https://www.facebook.com/andry.pebrianto/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Facebook Account"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-                <a
-                  class="text-light"
-                  href="https://www.instagram.com/andry_pebrianto/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Instagram Account"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/caesar-cipher-sederhana" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://caesarcipher1.netlify.app/" class="btn btn-success" target="_blank"
+                      rel="noreferrer">Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project2.webp" alt="Youtube Video Downloader Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">
+                  Youtube Video Downloader
+                </p>
+                <p class="card-text mb-2">
+                  Situs yang bisa digunakan untuk mengunduh video yang berasal
+                  dari Youtube.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">ExpressJS</span>
+                  <span class="badge bg-darkblue">Bootstrap 5</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/youtube-video-downloader" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://nibiruyt.herokuapp.com/" class="btn btn-success" target="_blank"
+                      rel="noreferrer">Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project6.webp" alt="NibiruWorld Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">NibiruWorld</p>
+                <p class="card-text mb-2">
+                  Website Sosial Media, dengan fitur membuat postingan,
+                  menambah pertemanan, dan banyak lagi.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">CodeIgniter 4</span>
+                  <span class="badge bg-darkblue">MySQL</span>
+                  <span class="badge bg-darkblue">Bootstrap 4</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/nibiruworld-sosmed" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project3.webp" alt="Trenggalek Profile Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">Trenggalek Profile</p>
+                <p class="card-text mb-2">
+                  Web Profile sederhana mengenai Kota Trenggalek.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">HTML 5</span>
+                  <span class="badge bg-darkblue">CSS 3</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/trenggalek-profile" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://trenggalek.netlify.app/" class="btn btn-success" target="_blank"
+                      rel="noreferrer">Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project4.webp" alt="QPZM Simple JS Game Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">QPZM Simple JS Game</p>
+                <p class="card-text mb-2">
+                  Game sederhana yang dibuat menggunakan Javascript.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">Javascript</span>
+                  <span class="badge bg-darkblue">Firebase</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/qpzm-simple-js-game" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://qpzm.netlify.app/" class="btn btn-success" target="_blank"
+                      rel="noreferrer">Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-2">
+            <div class="card shadow-sm h-100">
+              <div class="card-img">
+                <img class="img-fluid" src="./assets/img/project5.webp" alt="Nibirunime Thumbnail" />
+              </div>
+              <div class="card-body">
+                <p class="fs-5 fw-bold card-title">Nibirunime</p>
+                <p class="card-text mb-2">
+                  Website sederhana untuk melakukan pencarian Anime.
+                </p>
+                <div class="mb-0">
+                  <span class="badge bg-darkblue">Web Components</span>
+                  <span class="badge bg-darkblue">Webpack 5</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                  <a href="#projects" class="btn btn-primary me-auto">Detail</a>
+                  <div>
+                    <a href="https://github.com/andry-pebrianto/nibirunime-web-components" class="
+                          btn btn-secondary
+                          d-inline-flex
+                          align-items-center
+                          h-100
+                        " aria-label="Github Repository" target="_blank" rel="noreferrer">
+                      <i class="fab fa-github fs-5" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://nibirunime.netlify.app/" class="btn btn-success" target="_blank"
+                      rel="noreferrer">Demo</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End Of Hero -->
-    </header>
-    <!-- End Of Header -->
+    </section>
+    <!-- End Of Projects -->
 
-    <!-- Main -->
-    <main>
-      <!-- About -->
-      <section id="about" class="mb-5 pure pure-light">
-        <div class="container-lg py-5">
-          <!-- Di bawah md -->
-          <h2 class="fw-bold text-center d-md-none mb-3">About Me</h2>
-          <div class="row align-items-center">
-            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
-              <img
-                class="about-img d-none d-sm-inline d-md-none"
-                id="aboutImage2"
-                src="./assets/img/about2.webp"
-                alt="About Image"
-              />
-              <img
-                class="about-img"
-                id="aboutImage1"
-                src="./assets/img/about.webp"
-                alt="About Image"
-              />
-            </div>
-            <div class="col text-center text-md-start">
-              <!-- Di atas md -->
-              <h2 class="fw-bold d-none d-md-block">About Me</h2>
-              <p class="mb-0" style="line-height: 1.7; word-spacing: 3px">
-                Saya adalah seorang
-                <strong>Full Stack Web Developer</strong>
-                yang berfokus pada
-                <strong>Web Development</strong>. Saya telah berpengalaman
-                membuat beberapa project dengan menggunakan teknologi MERN
-                <strong>
-                  (MongoDB/MySQL, ExpressJS, ReactJS/NextJS, NodeJS).
-                </strong>
-              </p>
-            </div>
+    <!-- Contact -->
+    <section id="contact" class="mb-5 pure pure-light">
+      <div class="container-lg py-5">
+        <h2 class="fw-bold text-center mb-3">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-sm-10" id="contactAlert"></div>
+          <div class="col-sm-10">
+            <form class="shadow px-4 py-5" id="formContact">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required maxlength="100" />
+                    <label class="text-dark" for="name">Name</label>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="example@mail.com" required
+                      maxlength="100" />
+                    <label class="text-dark" for="email">Email</label>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Can you create a website for me?" id="message"
+                      style="height: 180px" required maxlength="1000"></textarea>
+                    <label class="text-dark" for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="captchaInput" placeholder="name@example.com" />
+                    <label class="text-dark" for="captchaInput" id="captchaQuestion">24 + 32 = ?</label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="formButton">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- End Of About -->
-
-      <!-- Projects -->
-      <section id="projects" class="mb-5 semi semi-light">
-        <div class="container-lg py-5">
-          <h2 class="fw-bold text-center mb-3 mt-2">My Projects</h2>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project1.webp"
-                    alt="Caesar Cipher Web App Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">Caesar Cipher Encoder</p>
-                  <p class="card-text mb-2">
-                    Aplikasi Web untuk melakukan enkripsi dan/atau dekripsi
-                    kriptografi Caesar Cipher.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">Javascript</span>
-                    <span class="badge bg-darkblue">Bootstrap 5</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/caesar-cipher-sederhana"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                      <a
-                        href="https://caesarcipher1.netlify.app/"
-                        class="btn btn-success"
-                        target="_blank"
-                        rel="noreferrer"
-                        >Demo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project2.webp"
-                    alt="Youtube Video Downloader Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">
-                    Youtube Video Downloader
-                  </p>
-                  <p class="card-text mb-2">
-                    Situs yang bisa digunakan untuk mengunduh video yang berasal
-                    dari Youtube.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">ExpressJS</span>
-                    <span class="badge bg-darkblue">Bootstrap 5</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/youtube-video-downloader"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                      <a
-                        href="https://nibiruyt.herokuapp.com/"
-                        class="btn btn-success"
-                        target="_blank"
-                        rel="noreferrer"
-                        >Demo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project6.webp"
-                    alt="NibiruWorld Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">NibiruWorld</p>
-                  <p class="card-text mb-2">
-                    Website Sosial Media, dengan fitur membuat postingan,
-                    menambah pertemanan, dan banyak lagi.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">CodeIgniter 4</span>
-                    <span class="badge bg-darkblue">MySQL</span>
-                    <span class="badge bg-darkblue">Bootstrap 4</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/nibiruworld-sosmed"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project3.webp"
-                    alt="Trenggalek Profile Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">Trenggalek Profile</p>
-                  <p class="card-text mb-2">
-                    Web Profile sederhana mengenai Kota Trenggalek.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">HTML 5</span>
-                    <span class="badge bg-darkblue">CSS 3</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/trenggalek-profile"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                      <a
-                        href="https://trenggalek.netlify.app/"
-                        class="btn btn-success"
-                        target="_blank"
-                        rel="noreferrer"
-                        >Demo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project4.webp"
-                    alt="QPZM Simple JS Game Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">QPZM Simple JS Game</p>
-                  <p class="card-text mb-2">
-                    Game sederhana yang dibuat menggunakan Javascript.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">Javascript</span>
-                    <span class="badge bg-darkblue">Firebase</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/qpzm-simple-js-game"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                      <a
-                        href="https://qpzm.netlify.app/"
-                        class="btn btn-success"
-                        target="_blank"
-                        rel="noreferrer"
-                        >Demo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col my-2">
-              <div class="card shadow-sm h-100">
-                <div class="card-img">
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/project5.webp"
-                    alt="Nibirunime Thumbnail"
-                  />
-                </div>
-                <div class="card-body">
-                  <p class="fs-5 fw-bold card-title">Nibirunime</p>
-                  <p class="card-text mb-2">
-                    Website sederhana untuk melakukan pencarian Anime.
-                  </p>
-                  <div class="mb-0">
-                    <span class="badge bg-darkblue">Web Components</span>
-                    <span class="badge bg-darkblue">Webpack 5</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between">
-                    <a href="#projects" class="btn btn-primary me-auto"
-                      >Detail</a
-                    >
-                    <div>
-                      <a
-                        href="https://github.com/andry-pebrianto/nibirunime-web-components"
-                        class="
-                          btn btn-secondary
-                          d-inline-flex
-                          align-items-center
-                          h-100
-                        "
-                        aria-label="Github Repository"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i class="fab fa-github fs-5" aria-hidden="true"></i>
-                      </a>
-                      <a
-                        href="https://nibirunime.netlify.app/"
-                        class="btn btn-success"
-                        target="_blank"
-                        rel="noreferrer"
-                        >Demo</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Of Projects -->
-
-      <!-- Contact -->
-      <section id="contact" class="mb-5 pure pure-light">
-        <div class="container-lg py-5">
-          <h2 class="fw-bold text-center mb-3">Contact Me</h2>
-          <div class="row justify-content-center">
-            <div class="col-sm-10" id="contactAlert"></div>
-            <div class="col-sm-10">
-              <form class="shadow px-4 py-5" id="formContact">
-                <div class="row">
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="John Doe"
-                        required
-                        maxlength="100"
-                      />
-                      <label class="text-dark" for="name">Name</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="example@mail.com"
-                        required
-                        maxlength="100"
-                      />
-                      <label class="text-dark" for="email">Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12 mb-3">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Can you create a website for me?"
-                        id="message"
-                        style="height: 180px"
-                        required
-                        maxlength="1000"
-                      ></textarea>
-                      <label class="text-dark" for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4">
-                    <div class="form-floating mb-3">
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="captchaInput"
-                        placeholder="name@example.com"
-                      />
-                      <label
-                        class="text-dark"
-                        for="captchaInput"
-                        id="captchaQuestion"
-                        >24 + 32 = ?</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary" id="formButton">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Of Contact -->
-    </main>
-    <!-- End Of Main -->
-
-    <!-- Footer -->
-    <footer>
-      <div class="bg-darkblue p-3">
-        <h1 class="text-center display-4" title="Back To Top">
-          <a href="#"><i class="fas fa-arrow-circle-up text-light"></i></a>
-        </h1>
-        <hr class="text-light fw-bold my-1" style="height: 2px" />
-        <div class="fs-5 text-center my-2">
-          <a
-            class="text-light mx-2"
-            href="https://wa.me/6285784964378"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Whatsapp Account"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a
-            class="text-light mx-2"
-            href="https://www.linkedin.com/in/andry-pebrianto/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Linkedin Account"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            class="text-light mx-2"
-            href="https://github.com/andry-pebrianto"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Github Account"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            class="text-light mx-2"
-            href="https://t.me/aswassaw"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Telegram Account"
-            ><i class="fab fa-telegram-plane"></i
-          ></a>
-          <a
-            class="text-light mx-2"
-            href="https://www.facebook.com/andry.pebrianto/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Facebook Account"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a
-            class="text-light mx-2"
-            href="https://www.instagram.com/andry_pebrianto/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram Account"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-        <p id="copyright" class="text-center text-light mb-0"></p>
       </div>
-    </footer>
-    <!-- End Of Footer -->
+    </section>
+    <!-- End Of Contact -->
+  </main>
+  <!-- End Of Main -->
 
-    <!-- JavaScript -->
-    <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/darkMode.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./assets/js/typewriter.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/scrollspyFixer.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
-    <script src="./assets/js/captcha.js"></script>
-    <script src="./assets/js/copyright.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <div class="bg-darkblue p-3">
+      <h1 class="text-center display-4" title="Back To Top">
+        <a href="#"><i class="fas fa-arrow-circle-up text-light"></i></a>
+      </h1>
+      <hr class="text-light fw-bold my-1" style="height: 2px" />
+      <div class="fs-5 text-center my-2">
+        <a class="text-light mx-2" href="https://wa.me/6285784964378" target="_blank" rel="noreferrer"
+          aria-label="Whatsapp Account"><i class="fab fa-whatsapp"></i></a>
+        <a class="text-light mx-2" href="https://www.linkedin.com/in/andry-pebrianto/" target="_blank" rel="noreferrer"
+          aria-label="Linkedin Account"><i class="fab fa-linkedin"></i></a>
+        <a class="text-light mx-2" href="https://github.com/andry-pebrianto" target="_blank" rel="noreferrer"
+          aria-label="Github Account"><i class="fab fa-github"></i></a>
+        <a class="text-light mx-2" href="https://t.me/aswassaw" target="_blank" rel="noreferrer"
+          aria-label="Telegram Account"><i class="fab fa-telegram-plane"></i></a>
+        <a class="text-light mx-2" href="https://www.facebook.com/andry.pebrianto/" target="_blank" rel="noreferrer"
+          aria-label="Facebook Account"><i class="fab fa-facebook"></i></a>
+        <a class="text-light mx-2" href="https://www.instagram.com/andry_pebrianto/" target="_blank" rel="noreferrer"
+          aria-label="Instagram Account"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p id="copyright" class="text-center text-light mb-0"></p>
+    </div>
+  </footer>
+  <!-- End Of Footer -->
+
+  <!-- JavaScript -->
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/darkMode.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="./assets/js/typewriter.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/scrollspyFixer.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+  <script src="./assets/js/captcha.js"></script>
+  <script src="./assets/js/copyright.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/slider.js"></script>
+</body>
+
 </html>

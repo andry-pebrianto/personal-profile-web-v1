@@ -47,3 +47,17 @@ body {
 .about-img {
   width: 265px;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: #191a19 !important;
+  background-color: #eee;
+
+}
+
+.slick-dots {
+  top: 210px;
+}
+
+.skill-item {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
