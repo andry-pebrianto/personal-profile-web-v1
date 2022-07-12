@@ -3,7 +3,7 @@ let darkModeCheckbox = document.getElementById("darkModeCheckbox");
 // Cek localstorage
 if (localStorage.getItem("theme") === "dark") {
   darkModeCheckbox.setAttribute("checked", "checked");
-  darkModeCheckbox.nextElementSibling.innerText = "Dark Theme";
+  darkModeCheckbox.nextElementSibling.innerText = "Dark";
 
   // Toggle untuk menambahkan/menghapus class bernama dark pada body
   document.body.classList.toggle("dark-theme");
@@ -21,12 +21,12 @@ function setDarkMode() {
 
   if (localStorage.getItem("theme") === "dark") {
     localStorage.removeItem("theme");
-    darkModeCheckbox.nextElementSibling.innerText = "Light Theme";
+    darkModeCheckbox.nextElementSibling.innerText = "Light";
 
     lightTheme();
   } else {
     localStorage.setItem("theme", "dark");
-    darkModeCheckbox.nextElementSibling.innerText = "Dark Theme";
+    darkModeCheckbox.nextElementSibling.innerText = "Dark";
 
     darkTheme();
   }

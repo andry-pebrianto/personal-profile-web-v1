@@ -6,7 +6,10 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString(`Full Stack Web Developer`)
+  .typeString(`Backend Developer`)
+  .pauseFor(2000)
+  .deleteAll()
+  .typeString(`Frontend Developer`)
   .pauseFor(2000)
   .deleteAll()
   .typeString(`I Can Create Awesome Stuff`)
