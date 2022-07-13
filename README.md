@@ -1,2 +1,2 @@
-# Portfolio Web
-Web Portfolio yang dibuat menggunakan Bootstrap 5.
+# Profile Web
+Web Profile yang dibuat menggunakan Bootstrap 5.
