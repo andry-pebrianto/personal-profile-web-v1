@@ -62,6 +62,13 @@ body {
 }
 
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
+.carousel-control-prev
+
+/*, .carousel-indicators */
+  {
+  filter: invert(100%);
+}
+
+.certificate-img {
+  width: 75%;
 }
